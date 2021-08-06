@@ -1,0 +1,52 @@
+/*
+Color Palette
+1. Dusk Blue    : rgb(4, 53, 88)
+2. Golden Sun   : rgb(170, 91, 11)
+3. Ray of Beige : rgb(253, 252, 237)
+*/
+
+/* Common Section */
+@font-face { font-family: "Futura Light BT"; src: url('resources/font/futura_light_bt.ttf'); } 
+@font-face { font-family: "Futura Medium BT"; src: url('resources/font/futura_medium_bt.ttf');}
+
+body {
+    font-family: "Futura Light BT", Verdana, Tahoma;
+    margin: 0;
+    padding: 0;
+    color: rgb(4, 53, 88);
+    background-color: rgb(253, 252, 237);
+    overflow: hidden;
+}
+
+.header{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80%;
+}
+
+h1 {
+    font-size: 12em;
+    font-weight: bold;
+    
+}
+
+h1 {
+    animation: fadein 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0%  { opacity: 0; }
+    33% { opacity: 1; }
+    66% { opacity: 0; content: "";}
+    67% { content: url(resources/logo_pagi_studio.png);}
+    100% { opacity: 1; content: url(resources/logo_pagi_studio.png);}
+}
