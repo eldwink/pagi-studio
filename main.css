@@ -29,17 +29,27 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 80%;
+    min-height: 50%;
 }
 
 h1 {
-    font-size: 12em;
+    font-size: 9em;
     font-weight: bold;
-    
+    font-family: "Futura Medium BT", Verdana, Tahoma;
+    animation: fadein 5s;
+    animation-fill-mode: forwards;
+    height: 150px;
 }
 
-h1 {
-    animation: fadein 5s;
+.intro img {
+    height: 150px;
+}
+
+h2 {
+    margin: 0;
+    opacity: 0;
+    animation: 2s fadein2;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
@@ -49,4 +59,30 @@ h1 {
     66% { opacity: 0; content: "";}
     67% { content: url(resources/logo_pagi_studio.png);}
     100% { opacity: 1; content: url(resources/logo_pagi_studio.png);}
+}
+
+@keyframes fadein2 {
+    from  { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    animation: 2s fadein2;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+} 
+
+.footer div {
+    display: flex;
+    align-items: center;
+}
+
+.footer div img {
+    padding: 1em;
 }
