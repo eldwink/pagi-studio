@@ -55,55 +55,63 @@ a, a:hover, a:focus, a:active {
 }
 
 .hero {
+    padding-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height: 50%;
+    height: 65%;
 }
 
-.intro {
+.hero .intro {
+    padding: 0;
     font-size: 5em;
     font-weight: bold;
     font-family: "Futura Medium BT", Verdana, Tahoma;
-    animation: fadein 3s;
+    content: url(resources/logo_pagi_studio.png);
+    opacity: 0;
+    animation: 1s ease-out fadeinmoveup;
     animation-fill-mode: forwards;
 }
 
-h2 {
-    margin: 0;
+.hero p {
+    font-weight: bold;
+    font-size: 1.1em;
     opacity: 0;
-    animation: 2s fadein2;
-    animation-delay: 3s;
+    animation: 1s fadein;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
-    0%  { opacity: 0; }
-    33% { opacity: 1; }
-    66% { opacity: 0; content: "";}
-    67% { content: url(resources/logo_pagi_studio.png);}
-    100% { opacity: 1; content: url(resources/logo_pagi_studio.png);}
-}
-
-@keyframes fadein2 {
     from  { opacity: 0; }
     to { opacity: 1; }
 }
 
+@keyframes fadeinmoveup {
+    from {
+        opacity: 0;
+        transform: translateY(250%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .footer  {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     text-align: center;
     opacity: 0;
-    animation: 2s fadein2;
-    animation-delay: 3s;
+    animation: 1s fadein;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
-    height: 40%;
-    padding-top: 1.2%;
+    height: 25%;
+    padding-top: 1.2em;
 } 
 
 .footer div {
@@ -111,10 +119,9 @@ h2 {
     align-items: center;
     font-weight: bold;
     font-size: 1.2em;
+    padding: 0 1%;
 }
 
 .footer div img {
     padding: 0 0.8em 0 0.8em;
-    width: 70%;
-    height: 70%;
 }
