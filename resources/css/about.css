@@ -6,8 +6,8 @@ Color Palette
 */
 
 /* Common Section */
-@font-face { font-family: "Futura Light BT"; src: url('resources/font/futura_light_bt.ttf'); } 
-@font-face { font-family: "Futura Medium BT"; src: url('resources/font/futura_medium_bt.ttf');}
+@font-face { font-family: "Futura Light BT"; src: url('../font/futura_light_bt.ttf'); } 
+@font-face { font-family: "Futura Medium BT"; src: url('../font/futura_medium_bt.ttf');}
 
 body {
     font-family: "Futura Light BT", Verdana, Tahoma;
@@ -69,7 +69,7 @@ a, a:hover, a:focus, a:active {
     font-size: 5em;
     font-weight: bold;
     font-family: "Futura Medium BT", Verdana, Tahoma;
-    content: url(resources/logo_pagi_studio.png);
+    content: url(../logo_pagi_studio.png);
     opacity: 0;
     animation: 1s ease-out fadeinmoveup;
     animation-fill-mode: forwards;
