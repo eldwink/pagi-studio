@@ -60,7 +60,7 @@ a, a:hover, a:focus, a:active {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    height: 50%;
+    height: 52%;
 }
 
 .intro {
@@ -102,7 +102,7 @@ h2 {
     animation: 2s fadein2;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    height: 40%;
+    height: 38%;
     padding-top: 1.2%;
 } 
 
@@ -117,4 +117,19 @@ h2 {
     padding: 0 0.8em 0 0.8em;
     width: 70%;
     height: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer  {
+        padding-top: 8%;
+    } 
+    .footer div {
+        font-size: 0.8em;
+    }
+    
+    .footer div img {
+        padding: 0 0.8em 0 0.8em;
+        width: 70%;
+        height: 70%;
+    }
 }
