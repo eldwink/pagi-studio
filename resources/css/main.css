@@ -92,6 +92,14 @@ h2 {
     to { opacity: 1; }
 }
 
+@media only screen and (max-width: 600px) {
+
+    .hero h2 {
+        font-size: 1.2em;
+        padding: 0 3%;
+    }
+}
+
 .footer  {
     display: flex;
     flex-direction: column;
